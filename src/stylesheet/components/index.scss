@@ -1,0 +1,23 @@
+.home {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__nav {
+    width: 100%;
+    &--list {
+      display: flex;
+      justify-content: space-between;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+.pics {
+  padding: 2rem;
+}
+.social {
+  padding: 2rem;
+}
