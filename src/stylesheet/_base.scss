@@ -16,4 +16,5 @@ body {
   box-sizing: border-box;
   font-family: "Karma", serif;
   width: 100%;
+  background-color: lighten($color: #000000, $amount: 30);
 }

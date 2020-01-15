@@ -1,22 +1,28 @@
+$bg: lighten($color: #000000, $amount: 30);
+$text-color: #fff;
+$header_color: darken($color: #fff, $amount: 30);
+// $border: 2px solid black;
+$border: none;
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 10px;
-  background-color: #fff;
-  color: grey;
+  background-color: $bg;
+  color: $text-color;
   height: 100vh;
   padding: 20px;
 
   h1 {
-    color: lighten($color: #000000, $amount: 20);
+    color: $header_color;
     font-family: Belleza, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 
 .box {
   font-size: 150%;
-  border: 2px solid black;
+  border:$border;
   text-align: center;
 }
 
@@ -51,11 +57,7 @@
   padding: 10px 10px;
 }
 
-.talk {
-  border: 2px solid black;
-}
-
-.form {
-  border: 2px solid black;
+.talk, .form {
+  border: $border;
 }
 

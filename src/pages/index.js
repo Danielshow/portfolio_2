@@ -33,7 +33,7 @@ const IndexPage = () => (
           <p>stack: Python, javascript, Ruby</p>
         </div>
         <div>
-          Built with gatsby ❤️
+          Built with gatsby <span role="img" aria-label="love">❤️</span>
         </div>
       </div>
       <div className="box pics">
@@ -57,7 +57,9 @@ const IndexPage = () => (
       </ul>
       </div>
       <div className="box e">
-        <div className="talk">T</div>
+        <div className="talk">
+          Do you have any interesting idea to discuss or something intuitive to build <span role="img" aria-label="build">👷‍♀️</span>, Let's chat
+        </div>
         <div className="form">F</div>
       </div>
     </div>
