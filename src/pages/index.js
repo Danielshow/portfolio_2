@@ -29,8 +29,8 @@ const IndexPage = () => (
         </div>
         <div class="home__hero">
           <h1>Danielshow</h1>
-          <h3>Software Developer</h3>
-          <p>stack: Python, javascript, Ruby</p>
+          <h3>Software Engineer</h3>
+          <p>Python, javascript and Ruby Developer</p>
         </div>
         <div>
           Built with gatsby <span role="img" aria-label="love">❤️</span>
@@ -59,6 +59,10 @@ const IndexPage = () => (
       <div className="box e">
         <div className="talk">
           Do you have any interesting idea to discuss or something intuitive to build <span role="img" aria-label="build">👷‍♀️</span>, Let's chat
+          &rarr;
+          <br/>
+          <br/>
+          <p>Fun Fact &rarr; I Live on the terminal and I love VIM</p>
         </div>
         <div className="form">F</div>
       </div>
