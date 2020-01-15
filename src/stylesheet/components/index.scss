@@ -15,9 +15,24 @@
   }
 }
 
-.pics {
+.pics, .social, .about, .special {
   padding: 2rem;
 }
-.social {
-  padding: 2rem;
+
+.special {
+  ul {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    line-height: 3rem;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.about {
+  p {
+    font-size: 1.5rem;
+  }
 }

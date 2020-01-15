@@ -43,7 +43,19 @@ const IndexPage = () => (
         <h1>About Me</h1>
         <p>Hello! I’m a Technophile and Software Developer specializing in developing web applications, testing and making the internet a more beautiful and positive place. I am a fast learner who loves learning new concepts and technology. I hold a National Diploma in Computer Engineering from Yaba College of Technology. I have over 3 years of experience in software development.</p>
       </div>
-      <div className="box d">Specialises</div>
+      <div className="box special">
+      <h1>Specializing in: </h1>
+      <ul>
+        <li> &rarr; Web Development</li>
+        <li> &rarr; Software Architecture</li>
+        <li> &rarr; Testing</li>
+        <li> &rarr; Unit Testing</li>
+        <li> &rarr; Object Oriented Programming</li>
+        <li> &rarr; Mentoring</li>
+        <li> &rarr; Database Architecture</li>
+        <li> &rarr; Agile Methodology</li>
+      </ul>
+      </div>
       <div className="box e">
         <div className="talk">T</div>
         <div className="form">F</div>
