@@ -1,4 +1,4 @@
-## 🚀 🚀 🚀 🚀 🚀 🚀 🚀 Danielshow Portfolio
+## Danielshow Portfolio 🚀 🚀 
 
 This is a simple portfolio+blog built with Gatsby
 
@@ -21,3 +21,8 @@ A quick look at the top-level files and directories.
     └── README.md
 
 ### Built with Gatsby with ❤️
+
+### still in development
+
+
+
