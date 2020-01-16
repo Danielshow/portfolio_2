@@ -2,8 +2,8 @@
 
 This is a simple portfolio+blog built with Gatsby
 
-
 ### Files
+
 A quick look at the top-level files and directories.
 
     .

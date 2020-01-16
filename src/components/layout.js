@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import '../stylesheet/main.scss'
+import "../stylesheet/main.scss"
 const Layout = ({ children }) => {
   return (
     <>
-        <main>{children}</main>
+      <main>{children}</main>
     </>
   )
 }
