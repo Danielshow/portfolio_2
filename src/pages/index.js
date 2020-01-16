@@ -9,8 +9,6 @@ import {
   FaGoogle,
   FaPhone,
   FaChess,
-  FaPython,
-  FaJava,
 } from "react-icons/fa"
 
 import Layout from "../components/layout"
