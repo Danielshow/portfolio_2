@@ -40,6 +40,24 @@
   }
 }
 
+.social {
+  text-align: left;
+  line-height: 3;
+  p {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      transition: color .5s ease-in-out;
+      &:hover {
+        color: $header_color
+      }
+    }
+    font-size: 2rem;
+    svg {
+      margin-bottom: -.3rem;
+    }
+  }
+}
 .about {
   p {
     font-size: 1.5rem;
@@ -56,5 +74,9 @@
     p {
       text-transform: uppercase;
     }
+  }
+
+  .form {
+    padding: 2rem;
   }
 }
