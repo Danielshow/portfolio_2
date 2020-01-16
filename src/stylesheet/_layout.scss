@@ -54,3 +54,38 @@
   border: $border;
 }
 
+/* W3 school */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .social, .home, .pics, .about, .special, .e {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .home {
+    grid-row: 1;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 700px) and (max-width: 1136px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .social, .home, .pics, .about, .special, .e {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .home {
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
+}

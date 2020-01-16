@@ -22,8 +22,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="wrapper">
       <div className="box social">
+        <h1>Social Links</h1>
         <div className="social__links">
-          <h1>Social Links</h1>
           <p>
             <a
               href="https://github.com/Danielshow"
@@ -84,7 +84,7 @@ const IndexPage = () => (
           <h3>Software Engineer</h3>
           <p>Python, javascript and Ruby Developer</p>
         </div>
-        <div>
+        <div class="built__gatsby">
           Built with gatsby
           <span role="img" aria-label="love">
             ❤️
