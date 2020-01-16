@@ -5,6 +5,12 @@ import {
   FaTwitter,
   FaDev,
   FaMedium,
+  FaPhoneSlash,
+  FaGoogle,
+  FaPhone,
+  FaChess,
+  FaPython,
+  FaJava,
 } from "react-icons/fa"
 
 import Layout from "../components/layout"
@@ -13,7 +19,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home | Danielshow" />
+    <SEO title="Home" />
     <div className="wrapper">
       <div className="box social">
         <div className="social__links">
@@ -125,10 +131,12 @@ const IndexPage = () => (
             👷‍♀️
           </span>
           , <br />
-          Let's chat &rarr;
+          Let's chat <FaPhoneSlash />
         </div>
         <div className="form">
-          <p>Email: danielshotonwa53@gmail.com</p>
+          <p><FaGoogle /> danielshotonwa53@gmail.com</p>
+          <p><FaPhone /> +2348096522832</p>
+          <p><FaChess /></p>
         </div>
       </div>
     </div>

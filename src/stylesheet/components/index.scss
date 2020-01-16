@@ -17,6 +17,10 @@
     h1 {
       font-size: 5rem;
       text-transform: uppercase;
+      transition: transform .5s ease-in-out;
+      &:hover {
+        transform: scale(1.5) rotate(-5deg);
+      }
     }
     h3 {
       font-size: 2.5rem;
@@ -26,6 +30,10 @@
 
 .pics, .social, .about, .special {
   padding: 2rem;
+}
+
+.pics .gatsby-image-wrapper {
+  height: 100%;
 }
 
 .special {
