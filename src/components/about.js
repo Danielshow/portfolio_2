@@ -2,9 +2,9 @@ import React from 'react'
 
 const About = ({open, setOpen}) => (
   <div>
-    <div className={open == true ? "about__overlay" : "about__overlay close"} onClick={ () => setOpen(false)}>
+    <div className={open ? "about__overlay" : "about__overlay close"} onClick={ () => setOpen(false)}>
     </div>
-    <div className={open == true ? "about__modal" : "about__modal close"}>
+    <div className={open ? "about__modal" : "about__modal close"}>
       {/* add CV info and some other stuffs like education and work experience*/}
       <div className="about__modal--all">
         <div className="education">
@@ -43,7 +43,7 @@ const About = ({open, setOpen}) => (
             <p>April 2016 - March 2017</p>
           </div>
         </div>
-        <a href="https://drive.google.com/file/d/1Fm9qSlhSl9MylW0IeRu1yp_T2W1pu7PZ/view?usp=sharing" target="_blank">View Resume</a>
+        <a href="https://drive.google.com/file/d/1Fm9qSlhSl9MylW0IeRu1yp_T2W1pu7PZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
     </div>
   </div>

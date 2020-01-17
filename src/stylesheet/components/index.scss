@@ -8,6 +8,7 @@
     &--list {
       display: flex;
       justify-content: space-around;
+      cursor: pointer;
       li {
         list-style-type: none;
       }
