@@ -18,24 +18,24 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {open && <About setOpen={setOpen}/>}
+      <About setOpen={setOpen} open={open}/>
       <div className="wrapper">
         <Stars />
         <Social />
         <div className="box home">
-          <div class="home__nav">
-            <ul class="home__nav--list">
+          <div className="home__nav">
+            <ul className="home__nav--list">
               <li>Blog</li>
               <li onClick={ () => setOpen(true)}>About</li>
               <li>Projects</li>
             </ul>
           </div>
-          <div class="home__hero">
+          <div className="home__hero">
             <h1>Danielshow</h1>
             <h3>Software Engineer</h3>
             <p>Python, javascript and Ruby Developer</p>
           </div>
-          <div class="built__gatsby">
+          <div className="built__gatsby">
             Built with gatsby
             <span role="img" aria-label="love">
               ❤️

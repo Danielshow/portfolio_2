@@ -1,11 +1,11 @@
 .about__modal {
-  overflow: hidden;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
   z-index: 4;
-  width: 100%;
-  min-height: 100%;
-  position: fixed;
-  margin-top: 10%;
-  margin-left: 30%;
+  opacity: 0;
+  animation: about_text .8s ease-in-out .3s forwards;
   h3 {
     font-size: 1.9rem;
   }
@@ -28,7 +28,6 @@
     }
   }
   &--all {
-    width: 40%;
     background-color: lighten($color: #fff, $amount: 60);
     opacity: 1;
     color: black;
@@ -50,4 +49,46 @@
   background-color: darken($color: $bg, $amount: 10);
   z-index: 3;
   overflow: hidden;
+  animation: about .5s ease-in-out;
+}
+
+.close {
+  animation: unfoldOut .5s ease-in-out forwards;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes about {
+  0% { transform: translateX(-100%);}
+  100% { transform: translate(0);}
+}
+
+@keyframes about_text {
+  0% {
+    transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(1) scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform:scaleY(1) scaleX(1);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(.005) scaleX(0);
+    display: none;
+  }
 }
