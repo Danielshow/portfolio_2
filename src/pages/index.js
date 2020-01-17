@@ -14,7 +14,7 @@ import Stars from '../components/stars'
 import About from '../components/about'
 
 const IndexPage = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(null)
   return (
     <Layout>
       <SEO title="Home" />
