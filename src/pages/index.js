@@ -10,11 +10,13 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Social from '../components/social'
+import Stars from '../components/stars'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="wrapper">
+      <Stars />
       <Social />
       <div className="box home">
         <div class="home__nav">

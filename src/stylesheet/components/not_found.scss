@@ -1,26 +1,13 @@
 // Not found copied from https://codepen.io/AlcinaW
 .not-found {
-  width: 560px;
-  height: 225px;
-  margin-right: -10px;
-  h1 {
-    font-weight: 700;
-    font-size: 40px;
-  }
-}
-.starry-sky {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-.search-icon {
-  display: inline-block;
+  width: 56rem;
+  height: 22.5rem;
+  margin-right: -1rem;
 }
 .notfound-copy {
   color: #fff;
   position: fixed;
-  top: 25px;
+  top: 2.5rem;
   right: 10%;
   text-align: right;
   .notfound__link {
@@ -49,13 +36,20 @@
   animation: blinkblink 7s linear infinite;
 }
 
+.starry-sky {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 @keyframes blinkblink {  
   50% { opacity: 0.1; }
 }
 
 @media (max-width: 647px) { 
   .moon {
-    padding-top: -500px;
+    padding-top: -50rem;
   }
 }
 
