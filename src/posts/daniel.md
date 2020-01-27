@@ -1,10 +1,9 @@
-___
+---
 
   title: Daniel Shotonwa
   date:  2019-04-04
   slug:  first-blog
-___
-
+---
 # Launched
 
 
