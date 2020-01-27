@@ -11,6 +11,10 @@
       cursor: pointer;
       li {
         list-style-type: none;
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -18,7 +22,7 @@
     h1 {
       font-size: 5rem;
       text-transform: uppercase;
-      transition: transform .5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
       &:hover {
         transform: scale(1.5) rotate(-5deg);
       }
@@ -29,7 +33,10 @@
   }
 }
 
-.pics, .social, .about, .special {
+.pics,
+.social,
+.about,
+.special {
   padding: 2rem;
 }
 
@@ -56,14 +63,14 @@
     a {
       color: $text-color;
       text-decoration: none;
-      transition: color .5s ease-in-out;
+      transition: color 0.5s ease-in-out;
       &:hover {
-        color: $header_color
+        color: $header_color;
       }
     }
     font-size: 2rem;
     svg {
-      margin-bottom: -.3rem;
+      margin-bottom: -0.3rem;
     }
   }
 }

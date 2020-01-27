@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import { Link } from 'gatsby'
 import {
   FaPhoneSlash,
   FaGoogle,
@@ -25,7 +26,7 @@ const IndexPage = () => {
         <div className="box home">
           <div className="home__nav">
             <ul className="home__nav--list">
-              <li>Blog</li>
+              <li><Link to="/blog">Blog</Link></li>
               <li onClick={ () => setOpen(true)}>About</li>
               <li>Projects</li>
             </ul>
