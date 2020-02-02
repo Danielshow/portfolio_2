@@ -27,8 +27,8 @@ const IndexPage = () => {
           <div className="home__nav">
             <ul className="home__nav--list">
               <li><Link to="/blog">Blog</Link></li>
-              <li onClick={ () => setOpen(true)}>About</li>
-              <li>Projects</li>
+              <li onClick={ () => setOpen(true)}><Link to="#">About</Link></li>
+              <li><Link to="/">Projects</Link></li>
             </ul>
           </div>
           <div className="home__hero">

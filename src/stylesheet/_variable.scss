@@ -1,7 +1,14 @@
 $bg-black: #1b2021;
 $snow: #c0c0c0;
-$bg: lighten($color: #000000, $amount: 30);
+$bg: lighten(
+  $color: #000000,
+  $amount: 30,
+);
+//$bg: #131218;
 $text-color: #fff;
-$header_color: darken($color: #fff, $amount: 30);
+$header_color: darken(
+  $color: #fff,
+  $amount: 30,
+);
 // $border: 2px solid black;
 $border: none;

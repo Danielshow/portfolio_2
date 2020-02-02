@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from 'gatsby'
 import Img from "gatsby-image"
@@ -6,9 +6,12 @@ import BackgroundImage from 'gatsby-background-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Header from "../components/header"
+import About from '../components/about'
+import Stars from '../components/stars'
 
 const Blog = () => {
+  const [open, setOpen] = useState(null)
   const data = useStaticQuery(graphql`
     query {
       allMdx {
@@ -33,13 +36,15 @@ const Blog = () => {
     }
   `)
   const { nodes } = data.allMdx
-  console.log(nodes)
   return (
     <Layout>
       <SEO title="All blogs page" />
+      <About open={open} setOpen={setOpen}/>
+      <div className="writing">WRITING</div>
       <div className="all__blogs">
-        <Link to="/">Home</Link>
-        <h1 className="all__blogs--title">All Blogs</h1>
+        <Header open={open} setOpen={setOpen} />
+         <h1 className="all__blogs--title">All Blogs</h1>
+          <Stars />
           <section class="cards">
           { nodes.map(node => {
             return (
@@ -60,17 +65,17 @@ const Blog = () => {
                 </div>
               </div>
               <div class="card__img" style={{ backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}></div>
-              <a href="#" class="card_link">
+              <Link to={`/blog/${node.frontmatter.slug}`} class="card_link">
               
                 <div class="card__img--hover" style={{ backgroundImage: `url(${node.frontmatter.image.childImageSharp.fluid.src})`}}></div>
-              </a>
+              </Link>
               <div class="card__info">
                 <span class="card__category"> Recipe</span>
+                <Link to={`/blog/${node.frontmatter.blog}`}><h3 class="card__title"> { node.frontmatter.title }</h3></Link>
                 <p>{node.excerpt}</p>
-                <h3 class="card__title"> { node.frontmatter.title }</h3>
                 <span class="card__by"
                   >by
-                  <a href="#" class="card__author" title="author"> { node.frontmatter.author }</a></span
+                  <Link to="/" class="card__author" title="author"> { node.frontmatter.author }</Link></span
                 >
               </div>
             </article>
