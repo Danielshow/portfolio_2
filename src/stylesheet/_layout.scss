@@ -12,13 +12,14 @@
 
   h1 {
     color: $header_color;
-    font-family: Belleza, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Belleza, sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
+      sans-serif;
   }
 }
 
 .box {
   font-size: 150%;
-  border:$border;
+  border: $border;
   text-align: center;
   z-index: 2;
 }
@@ -53,7 +54,8 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.talk, .form {
+.talk,
+.form {
   border: $border;
 }
 
@@ -65,7 +67,12 @@
     grid-template-rows: repeat(1, 1fr);
   }
 
-  .social, .home, .pics, .about, .special, .e {
+  .social,
+  .home,
+  .pics,
+  .about,
+  .special,
+  .e {
     grid-column: unset;
     grid-row: unset;
   }
@@ -82,7 +89,12 @@
     grid-template-rows: repeat(1, 1fr);
   }
 
-  .social, .home, .pics, .about, .special, .e {
+  .social,
+  .home,
+  .pics,
+  .about,
+  .special,
+  .e {
     grid-column: unset;
     grid-row: unset;
   }
