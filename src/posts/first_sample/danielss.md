@@ -4,7 +4,7 @@
   date:  2019-04-04
   author: Daniel Shotonwa
   image: ../../images/bg_two.jpg
-  slug:  first-blog
+  slug:  first-blog-iii
 ---
 # Launched
 
