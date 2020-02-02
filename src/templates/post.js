@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from 'gatsby-image'
 
 import SEO from '../components/seo'
 import Layout from '../components/layout'
@@ -36,18 +36,15 @@ const Post = ({ data: {mdx: post} }) => {
     <Layout>
        <SEO title={post.frontmatter.title} />
        <div className="post">
-          <div className="post__content">
-            <div className="post__content--Img">
-               <BackgroundImage
-                Tag="section"
-                className={''}
+        <div className="post__content">
+            <div className="post__content--img">
+              <BackgroundImage
+                Tag="div"
+                className={'post__content--img'}
                 fluid={post.frontmatter.image.childImageSharp.fluid}
-                backgroundColor={`#040e18`}
-              >
-                <h1>{post.frontmatter.title}</h1>
-              </BackgroundImage>
+              />
             </div>
-            <div className="post__content--blog">
+                       <div className="post__content--blog">
               <p>
                <MDXRenderer>
                  { post.body }

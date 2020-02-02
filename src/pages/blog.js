@@ -71,7 +71,7 @@ const Blog = () => {
               </Link>
               <div class="card__info">
                 <span class="card__category"> Recipe</span>
-                <Link to={`/blog/${node.frontmatter.blog}`}><h3 class="card__title"> { node.frontmatter.title }</h3></Link>
+                <Link to={`/blog/${node.frontmatter.slug}`}><h3 class="card__title"> { node.frontmatter.title }</h3></Link>
                 <p>{node.excerpt}</p>
                 <span class="card__by"
                   >by
